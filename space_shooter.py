@@ -19,8 +19,8 @@ YELLOW = (255, 255, 0)
 
 BORDER = pygame.Rect(WIDTH//2 - 5, 0, 10, HEIGHT)
 
-BULLET_HIT_SOUND = pygame.mixer.Sound('/Users/Arnav/Dropbox/Code/Retro Space Shooter/Assets/Grenade+1.mp3')
-BULLET_FIRE_SOUND = pygame.mixer.Sound('/Users/Arnav/Dropbox/Code/Retro Space Shooter/Assets/Gun+Silencer.mp3')
+BULLET_HIT_SOUND = pygame.mixer.Sound('Assets/Grenade+1.mp3')
+BULLET_FIRE_SOUND = pygame.mixer.Sound('Assets/Gun+Silencer.mp3')
 
 HEALTH_FONT = pygame.font.SysFont('calibri', 40)
 WINNER_FONT = pygame.font.SysFont('calibri', 100)
@@ -36,16 +36,16 @@ YELLOW_HIT = pygame.USEREVENT + 1
 RED_HIT = pygame.USEREVENT + 2
 
 YELLOW_SPACESHIP_IMAGE = pygame.image.load(
-    '/Users/Arnav/Dropbox/Code/Retro Space Shooter/Assets/spaceship_yellow.png')
+    'Assets/spaceship_yellow.png')
 YELLOW_SPACESHIP_IMAGE = pygame.transform.rotate(pygame.transform.scale(
     YELLOW_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 90)
 
 RED_SPACESHIP_IMAGE = pygame.image.load(
-    '/Users/Arnav/Dropbox/Code/Retro Space Shooter/Assets/spaceship_red.png')
+    'Assets/spaceship_red.png')
 RED_SPACESHIP_IMAGE = pygame.transform.rotate(pygame.transform.scale(
     RED_SPACESHIP_IMAGE, (SPACESHIP_WIDTH, SPACESHIP_HEIGHT)), 270)
 
-SPACE = pygame.transform.scale(pygame.image.load('/Users/Arnav/Dropbox/Code/Retro Space Shooter/Assets/space.png'), (WIDTH, HEIGHT))
+SPACE = pygame.transform.scale(pygame.image.load('Assets/space.png'), (WIDTH, HEIGHT))
 
 def draw_window(yellow, red, yellow_bullets, red_bullets, yellow_health, red_health):
     WINDOW.blit(SPACE, (0,0))
